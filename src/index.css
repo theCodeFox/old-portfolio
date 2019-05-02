@@ -379,7 +379,7 @@ ul {
 }
 .project-images {
   padding: 0;
-  margin: auto;
+  margin-top: 50%;
   border: none;
   border-radius: 8px;
 }
@@ -392,6 +392,7 @@ ul {
 .project-container {
   display: grid;
   width: 100%;
+  vertical-align: middle;
   overflow: hidden;
   padding: 0;
   margin: 1em 0;
@@ -410,36 +411,42 @@ ul {
   grid-area: projectImage1;
   height: 175px;
   width: 150px;
+  display: block;
   margin: auto;
 }
 .project-image2 {
   grid-area: projectImage2;
   height: 350px;
   width: 200px;
+  display: block;
   margin: auto;
 }
 .project-image3 {
   grid-area: projectImage3;
   height: 175px;
   width: 200px;
+  display: block;
   margin: auto;
 }
 .project-image4 {
   grid-area: projectImage4;
   height: 175px;
   width: 200px;
+  display: block;
   margin: auto;
 }
 .project-image5 {
   grid-area: projectImage5;
   height: 200px;
   width: 200px;
+  display: block;
   margin: auto;
 }
 .project-image6 {
   grid-area: projectImage6;
   height: 200px;
   width: 200px;
+  display: block;
   margin: auto;
 }
 .project-projectInfo1 {
