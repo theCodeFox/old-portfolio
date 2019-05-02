@@ -1,0 +1,647 @@
+html {
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  display: block;
+  color: black;
+  padding: 20px 14px;
+  text-decoration: none;
+  margin: 1em 0px;
+}
+.hover :hover {
+  border-bottom: solid 2px indigo;
+  border-top: solid 2px indigo;
+  border-radius: 0.5em;
+}
+body {
+  font-size: 100%;
+  height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+h3 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+}
+h4 {
+  font-size: 1.2em;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+img:not(.avatar .imgResize){
+  margin: 1em 0em;
+}
+div:not(.footer) {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+p {
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 0.5em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+header {
+  background-color: white;
+  border-bottom: solid 1px indigo;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 0.5em 0px;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.codeFox {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  margin: 0.2em;
+}
+.value-content {
+  position: relative;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+}
+.active {
+  color: white;
+  background-color: indigo;
+  border: solid 2px indigo;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 8px;
+}
+.headerLink {
+  color: black;
+  font-weight: bold;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 8px;
+}
+.footerLink {
+  padding: 10px 14px;
+}
+.imgResize {
+  border-radius: 1em;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-height: 90%;
+  max-width: 100%;
+}
+.avatar {
+  transition: all 0.5s ease;
+  border-radius: 50%;
+  border: dotted 2px indigo;
+  padding: 0;
+  margin: 1em;
+}
+.avatar:hover {
+  padding: 1em;
+  margin: 0;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  background-color: white;
+  border-top: solid 1px indigo;
+}
+.highlight {
+  color: indigo;
+  font-weight: bold;
+}
+.italics {
+  font-style: italic;
+}
+.banner {
+  border-top: dotted 1px indigo;
+  border-bottom: dotted 1px indigo;
+  background-color: rgba(230, 230, 250, 0.5);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+.value-banner {
+  border-top: dotted 1px indigo;
+  border-bottom: dotted 1px indigo;
+  background-color: rgba(230, 230, 250, 0.5);
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+  text-align: center;
+  width: 100%;
+  height: 85%;
+}
+.scroll-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: dotted 1px indigo;
+  border-bottom: dotted 1px indigo;
+  background-color: rgba(230, 230, 250, 0.5);
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+}
+.scroll-banner-content {
+  height: 5em;
+  margin: 0;
+  padding: 0;
+}
+.scroll-banner-image {
+  height: 30px;
+  width: 30px;
+  padding: 0 0.5em;
+  margin: 0;
+}
+.footerImages {
+  margin: 1em 0em;
+}
+
+.home {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.aboutMeContent {
+  justify-content: center;
+}
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.projects {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.contact :hover {
+  background-color: rgba(230, 230, 250, 1);
+}
+.contact-button {
+  border: dotted 2px indigo;
+  color: black;
+  width: 20em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.project-button {
+  border: dotted 2px indigo;
+  color: black;
+  background-color: rgba(230, 230, 250, 0.5);
+  width: 15em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+}
+.project-button-image {
+  border: dotted 2px indigo;
+  height: 15em;
+  width: 15em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+.contactImages {
+  margin: 0.5em 0;
+}
+.aboutMe {
+  display: grid;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  grid-template: 5em auto auto / auto 30em;
+  grid-template-areas:
+  "banner banner"
+  "myInfo image-container"
+  "values values"
+}
+.aboutMe-banner {
+  grid-area: banner;
+  width: 100%;
+}
+.aboutMe-content {
+  grid-area: myInfo;
+}
+.aboutMe-values {
+  grid-area: values;
+  position: relative;
+  padding: 1em 0;
+}
+.aboutMe-image-container {
+  grid-area: image-container;
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  grid-template: auto auto / 10em 10em 10em;
+  grid-template-areas:
+  "image1 image3 image3"
+  "image4 image4 image2"
+}
+.aboutMe-image1 {
+  grid-area: image1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0.2em;
+}
+.aboutMe-image2 {
+  grid-area: image2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.2em;
+}
+.aboutMe-image3 {
+  grid-area: image3;
+  position: absolute;
+  bottom: 0;
+  margin: 0.2em;
+}
+.aboutMe-image4 {
+  grid-area: image4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.2em;
+}
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  margin-top: 1em;
+  overflow: hidden;
+  height: 20em;
+  width: 100%;
+}
+.carousel-container {
+  border-top: dotted 1px indigo;
+  border-bottom: dotted 1px indigo;
+  background-color: rgba(230, 230, 250, 0.5);
+  margin: 1em 0;
+}
+.slide {
+  display: flex;
+  flex-flow: row;
+}
+.slide-image {
+  border-radius: 1em;
+  border: dotted 2px indigo;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  max-width: 40%;
+}
+.slide-content {
+  padding: 0 1em;
+  margin: auto;
+  width: 40%;
+}
+.slide-button {
+  width: 10%;
+  margin: auto;
+}
+.slide-button-image {
+  height: 30px;
+  width: 30px;
+  padding: 8em 0;
+  margin: 0;
+}
+.active-slide {
+  border: dotted 2px indigo;
+  background-color: white;
+  padding: 2px;
+  margin: 0 0.2em;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+}
+.inactive-slide {
+  padding: 4px;
+  margin: 0 0.2em;
+  height: 25px;
+  width: 25px;
+}
+.indicators {
+  margin: 0.5em;
+  padding: 0;
+}
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 0;
+}
+.project-images {
+  padding: 0;
+  margin: 0.5em;
+  border: none;
+  border-radius: 8px;
+}
+.flex-wrap {
+  display: flex;
+}
+.space-below {
+  padding-bottom: 0.5em;
+}
+.project-container {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 1em 0;
+  justify-content: center;
+  justify-items: center;
+  grid-template: auto auto auto auto auto auto / 210px auto 210px;
+  grid-template-areas:
+  "projectImage1 projectInfo1 projectInfo1"
+  "projectInfo2 projectInfo2 projectImage2"
+  "projectImage3 projectInfo3 projectInfo3"
+  "projectInfo4 projectInfo4 projectImage4"
+  "projectImage5 projectInfo5 projectInfo5"
+  "projectInfo6 projectInfo6 projectImage6"
+}
+.project-image1 {
+  grid-area: projectImage1;
+  height: 175px;
+  width: 150px;
+  margin: auto;
+}
+.project-image2 {
+  grid-area: projectImage2;
+  height: 350px;
+  width: 200px;
+  margin: auto;
+}
+.project-image3 {
+  grid-area: projectImage3;
+  height: 175px;
+  width: 200px;
+  margin: auto;
+}
+.project-image4 {
+  grid-area: projectImage4;
+  height: 175px;
+  width: 200px;
+  margin: auto;
+}
+.project-image5 {
+  grid-area: projectImage5;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+.project-image6 {
+  grid-area: projectImage6;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+.project-projectInfo1 {
+  grid-area: projectInfo1;
+  margin: auto;
+}
+.project-projectInfo2 {
+  grid-area: projectInfo2;
+  margin: auto;
+}
+.project-projectInfo3 {
+  grid-area: projectInfo3;
+  margin: auto;
+}
+.project-projectInfo4 {
+  grid-area: projectInfo4;
+  margin: auto;
+}
+.project-projectInfo5 {
+  grid-area: projectInfo5;
+  margin: auto;
+}
+.project-projectInfo6 {
+  grid-area: projectInfo6;
+  margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .project-container {
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+    grid-template: auto auto auto auto auto auto / 110px auto 110px;
+    grid-template-areas:
+    "projectImage1 projectInfo1 projectInfo1"
+    "projectInfo2 projectInfo2 projectImage2"
+    "projectImage3 projectInfo3 projectInfo3"
+    "projectInfo4 projectInfo4 projectImage4"
+    "projectImage5 projectInfo5 projectInfo5"
+    "projectInfo6 projectInfo6 projectImage6"
+  }
+  .project-image1 {
+    grid-area: projectImage1;
+    height: 90px;
+    width: 75px;
+  }
+  .project-image2 {
+    grid-area: projectImage2;
+    height: 175px;
+    width: 100px;
+  }
+  .project-image3 {
+    grid-area: projectImage3;
+    height: 90px;
+    width: 100px;
+  }
+  .project-image4 {
+    grid-area: projectImage4;
+    height: 90px;
+    width: 100px;
+  }
+  .project-image5 {
+    grid-area: projectImage5;
+    height: 100px;
+    width: 100px;
+  }
+  .project-image6 {
+    grid-area: projectImage6;
+    height: 100px;
+    width: 100px;
+  }
+  .aboutMe {
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    grid-template: auto auto auto / auto auto;
+    grid-template-areas:
+    "banner banner"
+    "myInfo myInfo"
+    "values values"
+  }
+  .aboutMe-image-container {
+    grid-area: image-container;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    grid-template: 0 0 0 / 0 0;
+    grid-template-areas:
+    "image3 image3"
+    "image1 image2"
+    "image4 image4"
+  }
+  .aboutMe-image1, .aboutMe-image2, .aboutMe-image3, .aboutMe-image4 {
+    visibility: hidden;
+  }
+  .contact-button {
+    border: dotted 2px indigo;
+    background-color: rgba(230, 230, 250, 1);
+    color: black;
+    width: 20em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  body {
+    font-size: 80%;
+  }
+  .footer {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+  }
+  .value-banner {
+    font-size: 70%;
+  }
+  img:not(.avatar .imgResize){
+    margin: 0.5em 0em;
+  }
+  header {
+    padding: 0.2em 0px;
+  }
+  .headerLink {
+    padding: 0.5em 0.2em;
+    margin: 0.6em 0.2em;
+  }
+  .projects {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .project-button {
+    border: dotted 1px indigo;
+    color: black;
+    background-color: rgba(230, 230, 250, 0.5);
+    width: 5em;
+    margin: 0.5em;
+  }
+  .project-button-image {
+    border: dotted 1px indigo;
+    height: 5em;
+    width: 5em;
+    margin: 0.5em;
+  }
+  .carousel {
+    height: 10em;
+  }
+  .slide-content {
+    padding: 0 0.2em;
+    margin: 0.2em;
+    width: 40%;
+    font-size: 70%;
+  }
+  .slide-image {
+    max-width: 50%;
+  }
+  .slide-button {
+    width: 5%;
+    margin: auto;
+  }
+  .slide-button-image {
+    height: 15px;
+    width: 15px;
+    padding: 4em 0;
+    margin: 0;
+  }
+  .active-slide {
+    border: none;
+    background-color: white;
+    padding: 2px;
+    height: 15px;
+    width: 15px;
+  }
+  .inactive-slide {
+    padding: 2px;
+    height: 15px;
+    width: 15px;
+  }
+  .center {
+    margin-top: 0.3em;
+  }
+  .scroll-banner {
+    height: 20px;
+  }
+  .scroll-banner-content {
+    font-size: 70%;
+    height: 4em;
+  }
+  .scroll-banner-image {
+    height: 20px;
+    width: 20px;
+    padding: 0 0.2em;
+  }
+}

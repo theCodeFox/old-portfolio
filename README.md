@@ -1,0 +1,1 @@
+A small site in React to display my personal projects and give some info on myself

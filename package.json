@@ -1,0 +1,32 @@
+{
+  "name": "codefox-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "audit": "0.0.6",
+    "fix": "0.0.6",
+    "flickity": "^2.2.0",
+    "local-storage": "^1.4.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-image": "^2.0.0",
+    "react-player": "^1.11.0",
+    "react-scripts": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
