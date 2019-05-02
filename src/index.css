@@ -379,7 +379,7 @@ ul {
 }
 .project-images {
   padding: 0;
-  margin: 0.5em;
+  margin: auto;
   border: none;
   border-radius: 8px;
 }
@@ -596,7 +596,7 @@ ul {
     margin: 0.5em;
   }
   .carousel {
-    height: 10em;
+    height: 12em;
   }
   .slide-content {
     padding: 0 0.2em;
