@@ -26,9 +26,9 @@ class App extends Component {
           ? <Link to="/" className="active codeFox">CodeFox</Link>
           : <span className="hover"><Link to="/" className="headerLink codeFox" onClick={() => this.togglePage('CodeFox')}>CodeFox</Link></span>}
 
-          {activePage === 'Contact'
+          {/* {activePage === 'Contact'
           ? <Link to="/contact" className="active right">Let's Talk</Link>
-          : <span className="hover"><Link to="/contact" className="headerLink right" onClick={() => this.togglePage('Contact')}>Let's Talk</Link></span>}
+          : <span className="hover"><Link to="/contact" className="headerLink right" onClick={() => this.togglePage('Contact')}>Let's Talk</Link></span>} */}
 
           {activePage === 'Projects'
           ? <Link to="/projects" className="active right">Projects</Link>
@@ -47,7 +47,7 @@ class App extends Component {
               default
             />
             <AboutMe path="/about-me" />
-            <Contact path="/contact" />
+            {/* <Contact path="/contact" /> */}
             <Projects path="/projects" />
             <PocketGP path="/projects/pocketgp" />
             <HiveNews path="/projects/hivenews" />

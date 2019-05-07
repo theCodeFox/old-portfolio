@@ -2,6 +2,7 @@ import React from 'react';
 import AboutMeContent from './AboutMeContent';
 import AboutMeImages from './AboutMeImages';
 import Values from './Values';
+import Contact from './Contact';
 
 const AboutMe = () => {
   return <div className="aboutMe">
@@ -17,6 +18,8 @@ const AboutMe = () => {
     <div className="aboutMe-values">
       <Values />
     </div>
+
+    <Contact />
 
   </div>
 }
