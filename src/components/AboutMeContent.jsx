@@ -8,7 +8,7 @@ const AboutMeContent = () => {
       </h3>
       <p>
         I live & work in <span className="highlight"> Manchester city centre.</span>
-        <br />Brew in hand, I am usually found in the Northern Quarter typing away on my laptop in one of the many, many coffee shops scattered about the place.
+        <br />Whilst not at work, I can usually be found in the Northern Quarter typing away on my laptop in one of the many, coffee shops scattered about the place.
       </p>
       <h3 className="highlight">
         <img src={require("../images/laptop.svg")} alt="laptop" height="16" width="16" />{' '}
@@ -21,7 +21,7 @@ const AboutMeContent = () => {
         <img src={require("../images/cog.png")} alt="cog" height="16" width="16" />{' '}
         What I am doing now
       </h3>
-      <p>Graduated as Junior Full Stack Developer(April 12th 2019) from <span className="highlight">Northcoders MCR</span></p>
+      <p>Graduated as a Junior Full Stack Developer (April 12th 2019) from <span className="highlight">Northcoders MCR</span>. I am now working as a Junior Software Engineer at <span className="highlight">Ditto AI Ltd</span></p>
       <h3 className="highlight">
         <img src={require("../images/cloud.png")} alt="cog" height="16" width="16" />{' '}
         Favourite Quote

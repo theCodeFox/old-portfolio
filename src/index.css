@@ -538,6 +538,9 @@ ul {
     "values values"
     "contact contact"
   }
+  .contact {
+    background-color: rgba(230, 230, 250, 1);
+  }
   .aboutMe-image-container {
     grid-area: image-container;
     display: grid;
@@ -557,7 +560,7 @@ ul {
   }
   .contact-button {
     /* border: dotted 2px indigo; */
-    background-color: rgba(230, 230, 250, 1);
+    /* background-color: rgba(230, 230, 250, 1); */
     color: black;
     width: 40%;
     font-size: 80%;

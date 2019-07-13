@@ -16,6 +16,7 @@ const AboutMe = () => {
     <AboutMeImages />
 
     <div className="aboutMe-values">
+      {/* <h1>Values</h1> */}
       <Values />
     </div>
 

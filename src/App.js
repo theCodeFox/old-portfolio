@@ -4,7 +4,6 @@ import ls from 'local-storage';
 import './App.css';
 import CodeFox from './components/CodeFox';
 import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
 import Projects from './components/Projects';
 import PocketGP from './components/PocketGP';
 import HiveNews from './components/HiveNews';
@@ -26,10 +25,6 @@ class App extends Component {
           ? <Link to="/" className="active codeFox">CodeFox</Link>
           : <span className="hover"><Link to="/" className="headerLink codeFox" onClick={() => this.togglePage('CodeFox')}>CodeFox</Link></span>}
 
-          {/* {activePage === 'Contact'
-          ? <Link to="/contact" className="active right">Let's Talk</Link>
-          : <span className="hover"><Link to="/contact" className="headerLink right" onClick={() => this.togglePage('Contact')}>Let's Talk</Link></span>} */}
-
           {activePage === 'Projects'
           ? <Link to="/projects" className="active right">Projects</Link>
           : <span className="hover"><Link to="/projects" className="headerLink right" onClick={() => this.togglePage('Projects')}>Projects</Link></span>}
@@ -47,7 +42,6 @@ class App extends Component {
               default
             />
             <AboutMe path="/about-me" />
-            {/* <Contact path="/contact" /> */}
             <Projects path="/projects" />
             <PocketGP path="/projects/pocketgp" />
             <HiveNews path="/projects/hivenews" />

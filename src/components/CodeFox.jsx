@@ -10,7 +10,7 @@ const CodeFox = ({ activePage, togglePage }) => {
       <img className="avatar" src={require("../images/theCodeFox.png")} alt="CodeFox" height="300" width="300" />
     </span>
     <h1>CodeFox</h1>
-    <h2>Junior Full Stack Developer</h2>
+    <h2>Junior Software Engineer</h2>
   </div>
 }
 
