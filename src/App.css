@@ -28,6 +28,10 @@ LIGHT MODE
 .headerLink-light {
   color: black;
 }
+.home-light {
+  color: black;
+  background-color: white;
+}
 .avatar-light {
   border: dashed 1px darkorange;
 }
@@ -109,6 +113,10 @@ DARK MODE
 }
 .headerLink-dark {
   color: white;
+}
+.home-dark {
+  color: white;
+  background-color: black;
 }
 .avatar-dark {
   border: dashed 1px rgb(230, 230, 250);
