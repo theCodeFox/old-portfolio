@@ -6,14 +6,14 @@ a {
 }
 li a {
   display: block;
-  color: black;
+  color: black; /* <--- */
   padding: 20px 14px;
   text-decoration: none;
   margin: 1em 0px;
 }
 .hover :hover {
-  border-bottom: solid 2px indigo;
-  border-top: solid 2px indigo;
+  border-bottom: solid 2px darkorange; /* <--- */
+  border-top: solid 2px darkorange; /* <--- */
   border-radius: 0.5em;
 }
 body {
@@ -57,14 +57,14 @@ p {
   margin-right: 1em;
   margin-left: 1em;
 }
-header {
-  background-color: white;
-  border-bottom: solid 1px indigo;
+header {  
+  background-color: white; /* <---- */
+  border-bottom: solid 1px darkorange; /* <---- */
+  color: black; /* <---- */
   width: 100%;
   list-style-type: none;
   overflow: hidden;
   display: block;
-  color: black;
   text-align: right;
   padding: 0.5em 0px;
   text-decoration: none;
@@ -91,15 +91,15 @@ ul {
   padding: 0;
 }
 .active {
-  color: white;
-  background-color: indigo;
-  border: solid 2px indigo;
+  color: white; /* <---- */
+  background-color: darkorange; /* <---- */
+  border: solid 2px darkorange; /* <---- */
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 8px;
 }
 .headerLink {
-  color: black;
+  color: black; /* <---- */
   font-weight: bold;
   padding: 0.5em;
   margin: 0.5em;
@@ -119,32 +119,30 @@ ul {
 .avatar {
   transition: all 0.5s ease;
   border-radius: 50%;
-  /* border: dotted 2px indigo; */
-  padding: 0;
+  border: dashed 1px darkorange; /* <---- */
+  padding: 0.5em;
   margin: 1em;
 }
 .avatar:hover {
   padding: 1em;
-  margin: 0;
+  margin: 0.5em;
 }
 .footer {
   position: relative;
   width: 100%;
   text-align: right;
-  background-color: white;
-  border-top: solid 1px indigo;
+  background-color: white; /* <---- */
+  border-top: solid 1px darkorange; /* <---- */
 }
 .highlight {
-  color: indigo;
+  color: darkorange; /* <---- */
   font-weight: bold;
 }
 .italics {
   font-style: italic;
 }
 .banner {
-  /* border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo; */
-  background-color: rgba(230, 230, 250, 0.5);
+  background-color: rgb(255, 245, 225); /* <----- */
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-top: 0.5em;
@@ -153,9 +151,7 @@ ul {
   width: 100%;
 }
 .value-banner {
-  /* border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo; */
-  background-color: rgba(230, 230, 250, 0.5);
+  background-color: rgb(255, 245, 225); /* <----- */
   padding: 0.5em 0;
   margin: 0.5em 0;
   text-align: center;
@@ -166,9 +162,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo; */
-  background-color: rgba(230, 230, 250, 0.5);
+  background-color: rgb(255, 245, 225); /* <----- */
   padding: 0.5em 0;
   margin: 0.5em 0;
   text-align: center;
@@ -218,26 +212,23 @@ ul {
   justify-content: space-evenly;
 }
 .contact :hover {
-  background-color: rgba(230, 230, 250, 1);
+  background-color: rgb(255, 245, 225); /* <----- */
 }
 .contact-button {
-  /* border: dotted 2px indigo; */
-  color: black;
+  color: black; /* <----- */
   width: 20em;
   border-radius: 0.5em;
   margin: 0.5em;
   padding: 0.5em;
 }
 .project-button {
-  /* border: dotted 2px indigo; */
-  color: black;
-  background-color: rgba(230, 230, 250, 0.5);
+  color: black; /* <----- */
+  background-color: rgb(255, 245, 225); /* <----- */
   width: 15em;
   border-radius: 0.5em;
   margin: 0.5em;
 }
 .project-button-image {
-  /* border: dotted 2px indigo; */
   height: 15em;
   width: 15em;
   border-radius: 0.5em;
@@ -320,9 +311,7 @@ ul {
   width: 100%;
 }
 .carousel-container {
-  /* border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo; */
-  background-color: rgba(230, 230, 250, 0.5);
+  background-color: rgb(255, 245, 225); /* <----- */
   margin: 1em 0;
 }
 .slide {
@@ -331,7 +320,6 @@ ul {
 }
 .slide-image {
   border-radius: 1em;
-  /* border: dotted 2px indigo; */
   display: block;
   margin: 1em;
   padding: 0;
@@ -354,7 +342,6 @@ ul {
   margin: 0;
 }
 .active-slide {
-  /* border: dotted 2px indigo; */
   background-color: white;
   padding: 2px;
   margin: 0 0.2em;
@@ -539,7 +526,7 @@ ul {
     "contact contact"
   }
   .contact {
-    background-color: rgba(230, 230, 250, 1);
+    background-color: rgb(255, 245, 225); /* <--- */
   }
   .aboutMe-image-container {
     grid-area: image-container;
@@ -559,9 +546,7 @@ ul {
     visibility: hidden;
   }
   .contact-button {
-    /* border: dotted 2px indigo; */
-    /* background-color: rgba(230, 230, 250, 1); */
-    color: black;
+    color: black; /* <--- */
     width: 40%;
     font-size: 80%;
     border-radius: 0.5em;
@@ -597,14 +582,12 @@ ul {
     justify-content: space-evenly;
   }
   .project-button {
-    /* border: dotted 1px indigo; */
-    color: black;
-    background-color: rgba(230, 230, 250, 0.5);
+    color: black; /* <--- */
+    background-color: rgb(255, 245, 225); /* <--- */
     width: 5em;
     margin: 0.5em;
   }
   .project-button-image {
-    /* border: dotted 1px indigo; */
     height: 5em;
     width: 5em;
     margin: 0.5em;
@@ -633,7 +616,7 @@ ul {
   }
   .active-slide {
     border: none;
-    background-color: white;
+    background-color: white; /* <--- */
     padding: 2px;
     height: 15px;
     width: 15px;
