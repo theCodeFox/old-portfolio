@@ -8,6 +8,9 @@ LIGHT MODE
 .link-light {
   color: black;
 }
+.theme-icon-light {
+  border: solid 1px black;
+}
 .hover-light :hover {
   border-bottom: solid 2px darkorange;
   border-top: solid 2px darkorange;
@@ -87,6 +90,9 @@ DARK MODE
 .link-dark {
   color: white;
 }
+.theme-icon-dark {
+  border: solid 1px white;
+}
 .hover-dark :hover {
   border-bottom: solid 2px rgb(230, 230, 250);
   border-top: solid 2px rgb(230, 230, 250);
@@ -98,18 +104,18 @@ DARK MODE
 }
 .active-dark {
   color: black;
-  background-color: rgb(255, 245, 225);
-  border: solid 2px rgb(255, 245, 225);
+  background-color: rgb(230, 230, 250);
+  border: solid 2px rgb(230, 230, 250);
 }
 .headerLink-dark {
   color: white;
 }
 .avatar-dark {
-  border: dashed 1px rgb(255, 245, 225);
+  border: dashed 1px rgb(230, 230, 250);
 }
 .footer-dark {
   background-color: black;
-  border-top: solid 1px rgb(255, 245, 225);
+  border-top: solid 1px rgb(230, 230, 250);
 }
 .highlight-dark {
   color: rgb(230, 230, 250);

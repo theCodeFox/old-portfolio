@@ -1,7 +1,7 @@
 import React from 'react';
 import { navigate } from '@reach/router';
 
-const CodeFox = ({ activePage, togglePage }) => {
+const CodeFox = ({ activePage, togglePage, theme }) => {
   return <div className="home">
       <span onClick={() => {
         togglePage('AboutMe');

@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectScrollBanner from './ProjectScrollBanner';
 
-const PocketGP = () => {
+const PocketGP = ({ theme }) => {
   return <div>
   <ProjectScrollBanner
     prev={{label: "Portfolio", route: "portfolio"}}

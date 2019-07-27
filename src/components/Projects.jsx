@@ -12,6 +12,7 @@ class Projects extends Component {
 
   render() {
   const { pocketGP, hiveNews, portfolio } = this.state;
+  const { theme } = this.props;
   return <div>
 
     <Carousel />

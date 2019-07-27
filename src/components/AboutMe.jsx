@@ -4,7 +4,7 @@ import AboutMeImages from './AboutMeImages';
 import Values from './Values';
 import Contact from './Contact';
 
-const AboutMe = () => {
+const AboutMe = ({ theme }) => {
   return <div className="aboutMe">
 
     <h2 className="banner aboutMe-banner"><span className="highlight">Hello! </span>Let's get to know each other!</h2>
@@ -20,7 +20,7 @@ const AboutMe = () => {
       <Values />
     </div>
 
-    <Contact />
+    {/* <Contact /> */}
 
   </div>
 }

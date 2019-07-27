@@ -11,27 +11,28 @@ import Portfolio from './components/Portfolio';
 
 class App extends Component {
   state = {
-    activePage: ls.get('activePage') || 'CodeFox'
+    activePage: ls.get('activePage') || 'CodeFox',
+    theme: 'light'
   }
 
   render() {
-    const { activePage } = this.state;
+    const { activePage, theme } = this.state;
     return (
       <div>
         <nav>
-          <header>
+          <header className={`header-${theme}`}>
           
           {activePage === 'CodeFox'
-          ? <Link to="/" className="active codeFox">CodeFox</Link>
-          : <span className="hover"><Link to="/" className="headerLink codeFox" onClick={() => this.togglePage('CodeFox')}>CodeFox</Link></span>}
+          ? <Link to="/" className={`active active-${theme} codeFox`}>CodeFox</Link>
+          : <span className={`hover hover-${theme}`}><Link to="/" className={`headerLink headerLink-${theme} codeFox`} onClick={() => this.togglePage('CodeFox')}>CodeFox</Link></span>}
 
           {activePage === 'Projects'
-          ? <Link to="/projects" className="active right">Projects</Link>
-          : <span className="hover"><Link to="/projects" className="headerLink right" onClick={() => this.togglePage('Projects')}>Projects</Link></span>}
+          ? <Link to="/projects" className={`active active-${theme} right`}>Projects</Link>
+          : <span className={`hover hover-${theme}`}><Link to="/projects" className={`headerLink headerLink-${theme} right link-${theme}`} onClick={() => this.togglePage('Projects')}>Projects</Link></span>}
 
           {activePage === 'AboutMe'
-          ? <Link to="/about-me" className="active right">About Me</Link>
-          : <span className="hover"><Link to="/about-me" className="headerLink right" onClick={() => this.togglePage('AboutMe')}>About Me</Link></span>}
+          ? <Link to="/about-me" className={`active active-${theme} right`}>About Me</Link>
+          : <span className={`hover hover-${theme}`}><Link to="/about-me" className={`headerLink headerLink-${theme} right link-${theme}`} onClick={() => this.togglePage('AboutMe')}>About Me</Link></span>}
 
           </header>
           <Router tabIndex="">
@@ -39,27 +40,44 @@ class App extends Component {
               path="/"
               activePage={activePage}
               togglePage={this.togglePage}
+              theme={theme}
               default
             />
-            <AboutMe path="/about-me" />
-            <Projects path="/projects" />
-            <PocketGP path="/projects/pocketgp" />
-            <HiveNews path="/projects/hivenews" />
-            <Portfolio path="/projects/portfolio" />
+            <AboutMe path="/about-me" theme={theme} />
+            <Projects path="/projects" theme={theme} />
+            <PocketGP path="/projects/pocketgp" theme={theme} />
+            <HiveNews path="/projects/hivenews" theme={theme} />
+            <Portfolio path="/projects/portfolio" theme={theme} />
           </Router>
         </nav>
 
-        <div className="footer">
+        <div className={`footer footer-${theme}`}>
+
+          <button className="theme-button" onClick={() => this.toggleTheme(theme)}>
+            <img className={`theme-icon theme-icon-${theme}`} src={require(`./images/${theme}.png`)} alt={`${theme} mode icon`} height="30px" width="30px" />
+          </button>
+
           <a href="https://github.com/theCodeFox" target="_blank" rel="noopener noreferrer" className="footerLink">
-            <img className="footerImages" src={require("./images/github-logo.png")} alt="GitHub" height="30px" width="30px" />
+            <img className="footerImages" src={require(`./images/github-logo-${theme}.png`)} alt="GitHub" height="30px" width="30px" />
           </a>
           <a href="https://www.linkedin.com/in/kay-vose-codefox/" target="_blank" rel="noopener noreferrer" className="footerLink">
-            <img className="footerImages" src={require("./images/linkedin-logo.png")} alt="LinkedIn" height="30px" width="30px" />
+            <img className="footerImages" src={require(`./images/linkedin-logo-${theme}.png`)} alt="LinkedIn" height="30px" width="30px" />
           </a>
+
         </div>
 
       </div>
     );
+  }
+
+  toggleTheme = (theme) => {
+    if (theme === 'light') {
+      this.setState({ theme: 'dark' })
+      ls.set('theme', 'dark')
+    } else {
+      this.setState({ theme: 'light' })
+      ls.set('theme', 'light')
+    }
   }
 
   togglePage = (page) => {

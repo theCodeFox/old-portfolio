@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectScrollBanner from './ProjectScrollBanner';
 
-const Portfolio = () => {
+const Portfolio = ({ theme }) => {
   return <div>
     <ProjectScrollBanner
       prev={{label: "Hive News", route: "hivenews"}}
