@@ -45,6 +45,7 @@ class App extends Component {
             />
             <AboutMe path="/about-me" theme={theme} />
             <Projects path="/projects" theme={theme} />
+            
             <PocketGP path="/projects/pocketgp" theme={theme} />
             <HiveNews path="/projects/hivenews" theme={theme} />
             <Portfolio path="/projects/portfolio" theme={theme} />

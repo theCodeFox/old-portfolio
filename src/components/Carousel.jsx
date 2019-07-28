@@ -55,8 +55,11 @@ class Carousel extends Component {
         key={`slide-${i}`}
         className={counter === i ? "active-slide" : "inactive-slide"}
         onClick={() => {
-        clearTimeout(autoSlide)
-        this.selectSlide(i)
+        if (counter !== i) {
+          clearTimeout(autoSlide);
+          this.selectSlide(i)
+        }
+        return;
       }} />
     })}
     </p>

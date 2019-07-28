@@ -76,7 +76,7 @@ ul {
   float: right;
 }
 .center {
-  margin: 0.2em;
+  margin: auto;
 }
 .vertical-centre {
   padding-top: 1em;
@@ -161,22 +161,21 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5em 0;
-  margin: 0.5em 0;
   text-align: center;
   width: 100%;
-  height: 30px;
 }
 .scroll-banner-content {
-  height: 5em;
   margin: 0;
-  padding: 0;
+  padding: 1em;
 }
 .scroll-banner-image {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   padding: 0 0.5em;
-  margin: 0;
+  margin: auto;
+}
+.small-text {
+  font-size: 0.8em;
 }
 .footerImages {
   margin: 16px;
@@ -302,6 +301,7 @@ ul {
   overflow: hidden;
   height: 20em;
   width: 100%;
+  cursor: pointer;
 }
 .carousel-container {
   margin: 1em 0;
@@ -343,8 +343,10 @@ ul {
 .inactive-slide {
   padding: 0.25em 0;
   margin: auto 0.2em;
+  opacity: 0.5;
   height: 1em;
   width: 1em;
+  cursor: pointer;
 }
 .indicators {
   margin: 0;
@@ -620,18 +622,16 @@ ul {
     width: 0.5em;
   }
   .center {
-    margin-top: 0.3em;
-  }
-  .scroll-banner {
-    height: 20px;
+    margin-top: auto;
   }
   .scroll-banner-content {
     font-size: 70%;
-    height: 4em;
   }
   .scroll-banner-image {
-    height: 20px;
-    width: 20px;
-    padding: 0 0.2em;
+    height: 15px;
+    width: 15px;
+  }
+  .hidden-text {
+    visibility: hidden;
   }
 }
