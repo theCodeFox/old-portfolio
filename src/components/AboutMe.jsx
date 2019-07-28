@@ -2,7 +2,6 @@ import React from 'react';
 import AboutMeContent from './AboutMeContent';
 import AboutMeImages from './AboutMeImages';
 import Values from './Values';
-import Contact from './Contact';
 
 const AboutMe = ({ theme }) => {
   return <div className={`aboutMe home home-${theme}`}>
@@ -20,8 +19,6 @@ const AboutMe = ({ theme }) => {
     <div className="aboutMe-values">
       <Values theme={theme} />
     </div>
-
-    {/* <Contact /> */}
 
   </div>
 }
