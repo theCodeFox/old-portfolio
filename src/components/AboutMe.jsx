@@ -3,19 +3,21 @@ import AboutMeContent from './AboutMeContent';
 import AboutMeImages from './AboutMeImages';
 import Values from './Values';
 
-const AboutMe = () => {
-  return <div className="aboutMe">
+const AboutMe = ({ theme }) => {
+  return <div className={`aboutMe home home-${theme}`}>
 
-    <h2 className="banner aboutMe-banner"><span className="highlight">Hello! </span>Let's get to know each other!</h2>
+    <div className={`banner banner-${theme} aboutMe-banner`}>
+        <h2 className={`vertical-centre`}><span className={`highlight highlight-${theme}`}>Hello! </span>Let's get to know each other!</h2>
+      </div>
 
     <div className="aboutMe-content">
-      <AboutMeContent />
+      <AboutMeContent theme={theme} />
     </div>
 
     <AboutMeImages />
 
     <div className="aboutMe-values">
-      <Values />
+      <Values theme={theme} />
     </div>
 
   </div>

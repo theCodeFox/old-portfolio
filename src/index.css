@@ -1,24 +1,21 @@
 html {
-  height: 100vh;
+  background-color: none;
 }
 a {
   text-decoration: none;
 }
 li a {
   display: block;
-  color: black;
   padding: 20px 14px;
   text-decoration: none;
   margin: 1em 0px;
 }
 .hover :hover {
-  border-bottom: solid 2px indigo;
-  border-top: solid 2px indigo;
   border-radius: 0.5em;
 }
 body {
   font-size: 100%;
-  height: 100vh;
+  height: 100%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
@@ -58,13 +55,10 @@ p {
   margin-left: 1em;
 }
 header {
-  background-color: white;
-  border-bottom: solid 1px indigo;
   width: 100%;
   list-style-type: none;
   overflow: hidden;
   display: block;
-  color: black;
   text-align: right;
   padding: 0.5em 0px;
   text-decoration: none;
@@ -82,31 +76,40 @@ ul {
   float: right;
 }
 .center {
-  margin: 0.2em;
+  margin: auto;
+}
+.vertical-centre {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.theme-icon {
+  border-radius: 8px;
+  cursor: pointer;
+}
+.theme-button {
+  float: left;
+  padding: 0;
+  margin: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 .value-content {
   position: relative;
   height: 70%;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 .active {
-  color: white;
-  background-color: indigo;
-  border: solid 2px indigo;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 8px;
 }
 .headerLink {
-  color: black;
   font-weight: bold;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 8px;
-}
-.footerLink {
-  padding: 10px 14px;
 }
 .imgResize {
   border-radius: 1em;
@@ -119,45 +122,37 @@ ul {
 .avatar {
   transition: all 0.5s ease;
   border-radius: 50%;
-  border: dotted 2px indigo;
-  padding: 0;
+  padding: 0.5em;
   margin: 1em;
+  cursor: pointer;
 }
 .avatar:hover {
   padding: 1em;
-  margin: 0;
+  margin: 0.5em;
 }
 .footer {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   text-align: right;
-  background-color: white;
-  border-top: solid 1px indigo;
+}
+.footerSpace {
+  height: 66px;
 }
 .highlight {
-  color: indigo;
   font-weight: bold;
 }
 .italics {
   font-style: italic;
 }
 .banner {
-  border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo;
-  background-color: rgba(230, 230, 250, 0.5);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
   text-align: center;
   width: 100%;
 }
 .value-banner {
-  border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo;
-  background-color: rgba(230, 230, 250, 0.5);
   padding: 0.5em 0;
-  margin: 0.5em 0;
   text-align: center;
   width: 100%;
   height: 85%;
@@ -166,33 +161,30 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo;
-  background-color: rgba(230, 230, 250, 0.5);
-  padding: 0.5em 0;
-  margin: 0.5em 0;
   text-align: center;
   width: 100%;
-  height: 30px;
 }
 .scroll-banner-content {
-  height: 5em;
   margin: 0;
-  padding: 0;
+  padding: 1em;
 }
 .scroll-banner-image {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   padding: 0 0.5em;
-  margin: 0;
+  margin: auto;
+}
+.small-text {
+  font-size: 0.8em;
 }
 .footerImages {
-  margin: 1em 0em;
+  margin: 16px;
 }
 
 .home {
   padding-top: 1em;
   padding-bottom: 1em;
+  min-height: 85vh;
 }
 .aboutMeContent {
   justify-content: center;
@@ -203,6 +195,7 @@ ul {
 }
 
 .contact {
+  grid-area: contact;
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
@@ -210,33 +203,25 @@ ul {
   justify-content: space-evenly;
 }
 .projects {
-  padding-top: 1em;
-  padding-bottom: 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-.contact :hover {
-  background-color: rgba(230, 230, 250, 1);
+.projectLinks {
+  margin: 1em 0;
 }
 .contact-button {
-  border: dotted 2px indigo;
-  color: black;
   width: 20em;
   border-radius: 0.5em;
   margin: 0.5em;
   padding: 0.5em;
 }
 .project-button {
-  border: dotted 2px indigo;
-  color: black;
-  background-color: rgba(230, 230, 250, 0.5);
   width: 15em;
   border-radius: 0.5em;
   margin: 0.5em;
 }
 .project-button-image {
-  border: dotted 2px indigo;
   height: 15em;
   width: 15em;
   border-radius: 0.5em;
@@ -250,11 +235,12 @@ ul {
   width: 100%;
   padding: 0;
   margin: 0;
-  grid-template: 5em auto auto / auto 30em;
+  grid-template: auto auto auto auto / auto 30em 0.5em;
   grid-template-areas:
-  "banner banner"
-  "myInfo image-container"
-  "values values"
+  "banner banner banner"
+  "myInfo image-container space"
+  "values values values"
+  "contact contact contact"
 }
 .aboutMe-banner {
   grid-area: banner;
@@ -263,10 +249,10 @@ ul {
 .aboutMe-content {
   grid-area: myInfo;
 }
+
 .aboutMe-values {
   grid-area: values;
   position: relative;
-  padding: 1em 0;
 }
 .aboutMe-image-container {
   grid-area: image-container;
@@ -312,15 +298,12 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-flow: row;
-  margin-top: 1em;
   overflow: hidden;
   height: 20em;
   width: 100%;
+  cursor: pointer;
 }
 .carousel-container {
-  border-top: dotted 1px indigo;
-  border-bottom: dotted 1px indigo;
-  background-color: rgba(230, 230, 250, 0.5);
   margin: 1em 0;
 }
 .slide {
@@ -329,9 +312,8 @@ ul {
 }
 .slide-image {
   border-radius: 1em;
-  border: dotted 2px indigo;
   display: block;
-  margin: 0;
+  margin: 1em;
   padding: 0;
   max-height: 100%;
   max-width: 40%;
@@ -352,22 +334,22 @@ ul {
   margin: 0;
 }
 .active-slide {
-  border: dotted 2px indigo;
-  background-color: white;
-  padding: 2px;
+  transition: all 0.5s ease;
+  padding: 0;
   margin: 0 0.2em;
-  border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 1.5em;
+  width: 1.5em;
 }
 .inactive-slide {
-  padding: 4px;
-  margin: 0 0.2em;
-  height: 25px;
-  width: 25px;
+  padding: 0.25em 0;
+  margin: auto 0.2em;
+  opacity: 0.5;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
 }
 .indicators {
-  margin: 0.5em;
+  margin: 0;
   padding: 0;
 }
 .hidden {
@@ -529,11 +511,12 @@ ul {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    grid-template: auto auto auto / auto auto;
+    grid-template: auto auto auto auto / auto auto;
     grid-template-areas:
     "banner banner"
     "myInfo myInfo"
     "values values"
+    "contact contact"
   }
   .aboutMe-image-container {
     grid-area: image-container;
@@ -553,10 +536,8 @@ ul {
     visibility: hidden;
   }
   .contact-button {
-    border: dotted 2px indigo;
-    background-color: rgba(230, 230, 250, 1);
-    color: black;
-    width: 20em;
+    width: 40%;
+    font-size: 80%;
     border-radius: 0.5em;
     margin: 0.5em;
     padding: 0.5em;
@@ -564,10 +545,17 @@ ul {
   body {
     font-size: 80%;
   }
+  .footerSpace {
+    height: 46px;
+  }
+  .footerImages {
+    margin: 8px;
+  }
   .footer {
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
+    height: 45px;
+  }
+  .theme-button {
+    margin: 8px;
   }
   .value-banner {
     font-size: 70%;
@@ -590,14 +578,10 @@ ul {
     justify-content: space-evenly;
   }
   .project-button {
-    border: dotted 1px indigo;
-    color: black;
-    background-color: rgba(230, 230, 250, 0.5);
     width: 5em;
     margin: 0.5em;
   }
   .project-button-image {
-    border: dotted 1px indigo;
     height: 5em;
     width: 5em;
     margin: 0.5em;
@@ -625,30 +609,29 @@ ul {
     margin: 0;
   }
   .active-slide {
-    border: none;
-    background-color: white;
-    padding: 2px;
-    height: 15px;
-    width: 15px;
+    transition: all 0.5s ease;
+    padding: 0;
+    margin: 0 0.2em;
+    height: 1em;
+    width: 1em;
   }
   .inactive-slide {
-    padding: 2px;
-    height: 15px;
-    width: 15px;
+    padding: 0.25em 0;
+    margin: auto 0.2em;
+    height: 0.5em;
+    width: 0.5em;
   }
   .center {
-    margin-top: 0.3em;
-  }
-  .scroll-banner {
-    height: 20px;
+    margin-top: auto;
   }
   .scroll-banner-content {
     font-size: 70%;
-    height: 4em;
   }
   .scroll-banner-image {
-    height: 20px;
-    width: 20px;
-    padding: 0 0.2em;
+    height: 15px;
+    width: 15px;
+  }
+  .hidden-text {
+    visibility: hidden;
   }
 }

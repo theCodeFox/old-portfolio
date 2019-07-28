@@ -1,1 +1,170 @@
+background {
+  background-color: indigo;
+}
+/*
+LIGHT MODE
+  text: black;
+  background: white;
+  highlight-text: darkorange;
+  highlight-bg: rgb(255, 245, 225);
+*/
+.bg-light {
+  height: 100vh;
+  background-color: white;
+}
+.link-light {
+  color: black;
+}
+.theme-icon-light {
+  border: solid 1px black;
+}
+.hover-light :hover {
+  border-bottom: solid 2px darkorange;
+  border-top: solid 2px darkorange;
+}
+.header-light {
+  background-color: white;
+  border-bottom: solid 1px darkorange;
+  color: black;
+}
+.active-light {
+  color: white;
+  background-color: darkorange;
+  border: solid 2px darkorange;
+}
+.headerLink-light {
+  color: black;
+}
+.home-light {
+  color: black;
+  background-color: white;
+}
+.avatar-light {
+  border: dashed 1px darkorange;
+}
+.footer-light {
+  background-color: white;
+  border-top: solid 1px darkorange;
+}
+.highlight-light {
+  color: darkorange;
+}
+.banner-light {
+  background-color: rgb(255, 245, 225);
+}
+.value-banner-light {
+  background-color: rgb(255, 245, 225);
+}
+.scroll-banner-light {
+  background-color: rgb(255, 245, 225);
+}
+.contact-light :hover {
+  background-color: rgb(255, 245, 225);
+}
+.contact-button-light {
+  color: black;
+}
+.project-button-light {
+  color: black;
+  background-color: rgb(255, 245, 225);
+}
+.carousel-container-light {
+  background-color: white; 
+}
 
+@media only screen and (max-width: 800px) {
+  .contact-light {
+    background-color: rgb(255, 245, 225);
+  }
+  .contact-button-light {
+    color: black;
+  }
+  .project-button-light {
+    color: black;
+    background-color: rgb(255, 245, 225);
+  }
+}
+
+/*
+DARK MODE
+  text: white
+  background: rgb(32, 32, 58)
+  highlight-text: rgb(93, 93, 168)
+  highlight-bg: rgb(62, 62, 112)
+*/
+.bg-dark {
+  height: 100%;
+  background-color: rgb(32, 32, 58);
+}
+.link-dark {
+  color: white;
+}
+.theme-icon-dark {
+  border: solid 1px white;
+}
+.hover-dark :hover {
+  border-bottom: solid 2px rgb(93, 93, 168);
+  border-top: solid 2px rgb(93, 93, 168);
+}
+.header-dark {
+  background-color: rgb(32, 32, 58);
+  border-bottom: solid 1px rgb(93, 93, 168);
+  color: white;
+}
+.active-dark {
+  color: rgb(32, 32, 58);
+  background-color: rgb(93, 93, 168);
+  border: solid 2px rgb(93, 93, 168);
+}
+.headerLink-dark {
+  color: white;
+}
+.home-dark {
+  color: white;
+  background-color: rgb(32, 32, 58);
+}
+.avatar-dark {
+  border: dashed 1px rgb(93, 93, 168);
+}
+.footer-dark {
+  background-color: rgb(32, 32, 58);
+  border-top: solid 1px rgb(93, 93, 168);
+}
+.highlight-dark {
+  color: rgb(143, 143, 250);
+}
+.banner-dark {
+  background-color: rgb(62, 62, 112);
+}
+.value-banner-dark {
+  background-color: rgb(62, 62, 112);
+}
+.scroll-banner-dark {
+  background-color: rgb(62, 62, 112);
+}
+.contact-dark :hover {
+  background-color: rgb(62, 62, 112);
+}
+.contact-button-dark {
+  color: white;
+}
+.project-button-dark {
+  color: white;
+  background-color: rgb(62, 62, 112);
+}
+.carousel-container-dark {
+  background-color: rgb(32, 32, 58);
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-dark {
+    background-color: rgb(62, 62, 112);
+  }
+  .contact-button-dark {
+    color: white;
+  }
+  .project-button-dark {
+    color: white;
+    background-color: rgb(62, 62, 112);
+  }
+}

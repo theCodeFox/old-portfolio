@@ -5,47 +5,27 @@ import Carousel from './Carousel';
 
 class Projects extends Component {
   state = {
-    pocketGP: true,
-    hiveNews: true,
-    portfolio: true,
+    projects: [
+      {name: 'pocketGP', alt: 'Pocket GP mobile App', title: 'Pocket GP: ', description: 'Cross platform mobile app supporting GPs and patients use their appointment times as efficiently as possible. Users can keep track of their ailments (including pictures and notes), with notifications and direct messaging between GP and patient.'},
+      {name: 'hiveNews', alt: 'hive news screen shot',title: 'Hive News: ', description: 'Allows user to create their own articles or read other users articles and comments. They can comment and vote on what they like or dislike and make changes to their articles or comments, including deleting what is no longer needed.'},
+      {name: 'portfolio', alt: 'portfolio screen shot', title: 'Portfolio: ', description: 'User can find out a little about me, Kay Vose (aka CodeFox), including what projects I have completed and how to contact me.'}
+      ],
   }
 
   render() {
-  const { pocketGP, hiveNews, portfolio } = this.state;
-  return <div>
+    const { projects } = this.state;
+    const { theme } = this.props;
+    return <div className={`home home-${theme}`}>
 
-    <Carousel />
+    <Carousel theme={theme} projects={projects} />
 
     <div className="aboutMe-values">
-      <Values />
+      <Values theme={theme} />
     </div>
 
-    <ProjectList
-      pocketGP={pocketGP}
-      hiveNews={hiveNews}
-      portfolio={portfolio}
-      toggleHoverPocketGP={this.toggleHoverPocketGP}
-      toggleHoverHiveNews={this.toggleHoverHiveNews}
-      toggleHoverPortfolio={this.toggleHoverPortfolio}
-    />
+    <ProjectList theme={theme} projects={projects} />
 
   </div>
-  }
-
-  toggleHoverPocketGP = () => {
-    const { pocketGP } = this.state;
-    if(pocketGP) this.setState({ pocketGP: false })
-    else this.setState({ pocketGP: true })
-  }
-  toggleHoverHiveNews = () => {
-    const { hiveNews } = this.state;
-    if(hiveNews) this.setState({ hiveNews: false })
-    else this.setState({ hiveNews: true })
-  }
-  toggleHoverPortfolio = () => {
-    const { portfolio } = this.state;
-    if(portfolio) this.setState({ portfolio: false })
-    else this.setState({ portfolio: true })
   }
 }
 
