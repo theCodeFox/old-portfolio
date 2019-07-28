@@ -1,3 +1,6 @@
+background {
+  background-color: indigo;
+}
 /*
 LIGHT MODE
   text: black;
@@ -5,6 +8,10 @@ LIGHT MODE
   highlight-text: darkorange;
   highlight-bg: rgb(255, 245, 225);
 */
+.bg-light {
+  height: 100vh;
+  background-color: white;
+}
 .link-light {
   color: black;
 }
@@ -87,10 +94,14 @@ LIGHT MODE
 /*
 DARK MODE
   text: white
-  background: black
-  highlight-text: rgb(230, 230, 250)
-  highlight-bg: indigo
+  background: rgb(32, 32, 58)
+  highlight-text: rgb(93, 93, 168)
+  highlight-bg: rgb(62, 62, 112)
 */
+.bg-dark {
+  height: 100%;
+  background-color: rgb(32, 32, 58);
+}
 .link-dark {
   color: white;
 }
@@ -98,74 +109,74 @@ DARK MODE
   border: solid 1px white;
 }
 .hover-dark :hover {
-  border-bottom: solid 2px rgb(230, 230, 250);
-  border-top: solid 2px rgb(230, 230, 250);
+  border-bottom: solid 2px rgb(93, 93, 168);
+  border-top: solid 2px rgb(93, 93, 168);
 }
 .header-dark {
-  background-color: black;
-  border-bottom: solid 1px rgb(230, 230, 250);
+  background-color: rgb(32, 32, 58);
+  border-bottom: solid 1px rgb(93, 93, 168);
   color: white;
 }
 .active-dark {
-  color: black;
-  background-color: rgb(230, 230, 250);
-  border: solid 2px rgb(230, 230, 250);
+  color: rgb(32, 32, 58);
+  background-color: rgb(93, 93, 168);
+  border: solid 2px rgb(93, 93, 168);
 }
 .headerLink-dark {
   color: white;
 }
 .home-dark {
   color: white;
-  background-color: black;
+  background-color: rgb(32, 32, 58);
 }
 .avatar-dark {
-  border: dashed 1px rgb(230, 230, 250);
+  border: dashed 1px rgb(93, 93, 168);
 }
 .footer-dark {
-  background-color: black;
-  border-top: solid 1px rgb(230, 230, 250);
+  background-color: rgb(32, 32, 58);
+  border-top: solid 1px rgb(93, 93, 168);
 }
 .highlight-dark {
-  color: rgb(230, 230, 250);
+  color: rgb(143, 143, 250);
 }
 .banner-dark {
-  background-color: indigo;
+  background-color: rgb(62, 62, 112);
 }
 .value-banner-dark {
-  background-color: indigo;
+  background-color: rgb(62, 62, 112);
 }
 .scroll-banner-dark {
-  background-color: indigo;
+  background-color: rgb(62, 62, 112);
 }
 .contact-dark :hover {
-  background-color: indigo;
+  background-color: rgb(62, 62, 112);
 }
 .contact-button-dark {
   color: white;
 }
 .project-button-dark {
   color: white;
-  background-color: indigo;
+  background-color: rgb(62, 62, 112);
 }
 .carousel-container-dark {
-  background-color: indigo; 
+  background-color: rgb(62, 62, 112); 
 }
 .active-slide-dark {
-  background-color: black;
+  background-color: rgb(32, 32, 58);
 }
 
 @media only screen and (max-width: 800px) {
   .contact-dark {
-    background-color: indigo;
+    background-color: rgb(62, 62, 112);
   }
   .contact-button-dark {
     color: white;
   }
   .project-button-dark {
     color: white;
-    background-color: indigo;
+    background-color: rgb(62, 62, 112);
   }
   .active-slide-dark {
-    background-color: black;
+    background-color: rgb(32, 32, 58);
   }
 }

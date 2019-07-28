@@ -12,13 +12,13 @@ import Portfolio from './components/Portfolio';
 class App extends Component {
   state = {
     activePage: ls.get('activePage') || 'CodeFox',
-    theme: 'light'
+    theme: ls.get('theme') || 'light'
   }
 
   render() {
     const { activePage, theme } = this.state;
     return (
-      <div>
+      <div className={`bg-${theme}`}>
         <nav>
           <header className={`header-${theme}`}>
           
@@ -51,20 +51,22 @@ class App extends Component {
           </Router>
         </nav>
 
-        <div className={`footer footer-${theme}`}>
+        <div className="footerSpace" />
+
+        <footer className={`footer footer-${theme}`}>
 
           <button className="theme-button" onClick={() => this.toggleTheme(theme)}>
-            <img className={`theme-icon theme-icon-${theme}`} src={require(`./images/${theme}.png`)} alt={`${theme} mode icon`} height="30px" width="30px" />
+            <img className={`theme-icon theme-icon-${theme}`} src={require(`./images/${theme}.png`)} alt={`${theme} mode icon`} height="29px" width="29px" />
           </button>
 
-          <a href="https://github.com/theCodeFox" target="_blank" rel="noopener noreferrer" className="footerLink">
+          <a href="https://github.com/theCodeFox" target="_blank" rel="noopener noreferrer">
             <img className="footerImages" src={require(`./images/github-logo-${theme}.png`)} alt="GitHub" height="30px" width="30px" />
           </a>
-          <a href="https://www.linkedin.com/in/kay-vose-codefox/" target="_blank" rel="noopener noreferrer" className="footerLink">
+          <a href="https://www.linkedin.com/in/kay-vose-codefox/" target="_blank" rel="noopener noreferrer">
             <img className="footerImages" src={require(`./images/linkedin-logo-${theme}.png`)} alt="LinkedIn" height="30px" width="30px" />
           </a>
 
-        </div>
+        </footer>
 
       </div>
     );
