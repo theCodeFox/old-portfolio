@@ -69,10 +69,7 @@ LIGHT MODE
   background-color: rgb(255, 245, 225);
 }
 .carousel-container-light {
-  background-color: rgb(255, 245, 225); 
-}
-.active-slide-light {
-  background-color: white;
+  background-color: white; 
 }
 
 @media only screen and (max-width: 800px) {
@@ -85,9 +82,6 @@ LIGHT MODE
   .project-button-light {
     color: black;
     background-color: rgb(255, 245, 225);
-  }
-  .active-slide-light {
-    background-color: white;
   }
 }
 
@@ -159,9 +153,6 @@ DARK MODE
   background-color: rgb(62, 62, 112);
 }
 .carousel-container-dark {
-  background-color: rgb(62, 62, 112); 
-}
-.active-slide-dark {
   background-color: rgb(32, 32, 58);
 }
 
@@ -175,8 +166,5 @@ DARK MODE
   .project-button-dark {
     color: white;
     background-color: rgb(62, 62, 112);
-  }
-  .active-slide-dark {
-    background-color: rgb(32, 32, 58);
   }
 }

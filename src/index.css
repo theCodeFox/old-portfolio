@@ -1,5 +1,5 @@
 html {
-  background-color: red;
+  background-color: none;
 }
 a {
   text-decoration: none;
@@ -204,13 +204,12 @@ ul {
   justify-content: space-evenly;
 }
 .projects {
-  padding-top: 1em;
-  padding-bottom: 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-.contact :hover {
+.projectLinks {
+  margin: 1em 0;
 }
 .contact-button {
   width: 20em;
@@ -300,7 +299,6 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-flow: row;
-  margin-top: 1em;
   overflow: hidden;
   height: 20em;
   width: 100%;
@@ -336,21 +334,20 @@ ul {
   margin: 0;
 }
 .active-slide {
-  background-color: white;
-  padding: 2px;
+  transition: all 0.5s ease;
+  padding: 0;
   margin: 0 0.2em;
-  border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 1.5em;
+  width: 1.5em;
 }
 .inactive-slide {
-  padding: 4px;
-  margin: 0 0.2em;
-  height: 25px;
-  width: 25px;
+  padding: 0.25em 0;
+  margin: auto 0.2em;
+  height: 1em;
+  width: 1em;
 }
 .indicators {
-  margin: 0.5em;
+  margin: 0;
   padding: 0;
 }
 .hidden {
@@ -610,15 +607,17 @@ ul {
     margin: 0;
   }
   .active-slide {
-    border: none;
-    padding: 2px;
-    height: 15px;
-    width: 15px;
+    transition: all 0.5s ease;
+    padding: 0;
+    margin: 0 0.2em;
+    height: 1em;
+    width: 1em;
   }
   .inactive-slide {
-    padding: 2px;
-    height: 15px;
-    width: 15px;
+    padding: 0.25em 0;
+    margin: auto 0.2em;
+    height: 0.5em;
+    width: 0.5em;
   }
   .center {
     margin-top: 0.3em;
