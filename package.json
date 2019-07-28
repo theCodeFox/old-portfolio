@@ -1,18 +1,20 @@
 {
   "name": "codefox-portfolio",
-  "version": "0.1.0",
+  "author": "theCodeFox",
+  "repository": "https://github.com/theCodeFox/portfolio",
+  "version": "2.0",
   "private": true,
   "dependencies": {
-    "@reach/router": "^1.2.1",
+    "@reach/router": "1.2.1",
     "audit": "0.0.6",
     "fix": "0.0.6",
-    "flickity": "^2.2.0",
-    "local-storage": "^1.4.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-image": "^2.0.0",
-    "react-player": "^1.11.0",
-    "react-scripts": "^3.0.0"
+    "flickity": "2.2.1",
+    "local-storage": "2.0.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-image": "2.1.3",
+    "react-player": "1.11.1",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
