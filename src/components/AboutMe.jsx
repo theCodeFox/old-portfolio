@@ -4,7 +4,7 @@ import AboutMeImages from './AboutMeImages';
 import Values from './Values';
 
 const AboutMe = ({ theme }) => {
-  return <div className={`aboutMe home home-${theme}`}>
+  return <div className={`aboutMe home-${theme}`}>
 
     <div className={`banner banner-${theme} aboutMe-banner`}>
         <h2 className={`vertical-centre`}><span className={`highlight highlight-${theme}`}>Hello! </span>Let's get to know each other!</h2>

@@ -1,5 +1,6 @@
 html {
   background-color: none;
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -9,6 +10,9 @@ li a {
   padding: 20px 14px;
   text-decoration: none;
   margin: 1em 0px;
+}
+nav {
+  min-height: 100vh;
 }
 .hover :hover {
   border-radius: 0.5em;
@@ -106,6 +110,7 @@ ul {
   border-radius: 8px;
 }
 .headerLink {
+  border-top: solid 2px transparent;
   font-weight: bold;
   padding: 0.5em;
   margin: 0.5em;
@@ -131,10 +136,6 @@ ul {
   margin: 0.5em;
 }
 .footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   text-align: right;
 }
@@ -155,7 +156,6 @@ ul {
   padding: 0.5em 0;
   text-align: center;
   width: 100%;
-  height: 85%;
 }
 .scroll-banner {
   display: flex;
@@ -181,11 +181,11 @@ ul {
 .footerImages {
   margin: 16px;
 }
-
-.home {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  min-height: 85vh;
+.bg {
+  min-height: 100vh;
+}
+.codeFox-content {
+  padding: 1em 0;
 }
 .aboutMeContent {
   justify-content: center;
@@ -223,11 +223,16 @@ ul {
   margin: 0.5em;
 }
 .project-button-image {
+  opacity: 0.7;
   cursor: pointer;
-  height: 15em;
-  width: 15em;
+  height: 10em;
+  width: 10em;
   border-radius: 0.5em;
   margin: 1em;
+}
+.project-button-image:hover {
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 .contactImages {
   margin: 0.5em 0;

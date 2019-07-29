@@ -15,7 +15,7 @@ class Projects extends Component {
   render() {
     const { projects } = this.state;
     const { theme } = this.props;
-    return <div className={`home home-${theme}`}>
+    return <div className={`home-${theme}`}>
 
     <Carousel theme={theme} projects={projects} />
 

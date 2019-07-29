@@ -3,7 +3,7 @@ import React from 'react';
 const Values = ({ theme }) => {
   return <div className={`value-banner value-banner-${theme} inline`}>
     <span className="value-content">
-      <h4 className={`highlight highlight-${theme}`}>Userbility</h4>
+      <h4 className={`highlight highlight-${theme}`}>Usability</h4>
       <p>People are at the core of what I do. It is important to me that everything I do enhances the user experience.</p>
     </span>
 

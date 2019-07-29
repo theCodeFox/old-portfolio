@@ -9,7 +9,7 @@ const Portfolio = ({ theme }) => {
       next={{label: "Pocket GP", route: "pocketgp"}}
       theme={theme}
     />
-    <div className="home">
+    <div>
     <div className="project-container">
       <div className="project-projectInfo2">
         <p><span className={`highlight highlight-${theme}`}>CodeFox Portfolio</span> is where you are now! It has been designed to display any personal projects I am working on and give you some more information on myself.</p>

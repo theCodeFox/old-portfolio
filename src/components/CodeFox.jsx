@@ -2,7 +2,7 @@ import React from 'react';
 import { navigate } from '@reach/router';
 
 const CodeFox = ({ activePage, togglePage, theme }) => {
-  return <div className={`home home-${theme}`}>
+  return <div className={`home-${theme} codeFox-content`}>
       <span onClick={() => {
         togglePage('AboutMe');
         navigate('/about-me', { state: { msg: 'redirect to about-me' } })

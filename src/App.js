@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div className={`bg-${theme}`}>
         <nav>
-          <header className={`header-${theme}`}>
+          <header className={`header-${theme} header`}>
           
           {activePage === 'CodeFox'
           ? <Link to="/" className={`active active-${theme} codeFox`}>CodeFox</Link>
@@ -50,9 +50,6 @@ class App extends Component {
             <HiveNews path="/projects/hivenews" theme={theme} />
             <Portfolio path="/projects/portfolio" theme={theme} />
           </Router>
-        </nav>
-
-        <div className="footerSpace" />
 
         <footer className={`footer footer-${theme}`}>
 
@@ -68,6 +65,8 @@ class App extends Component {
           </a>
 
         </footer>
+
+        </nav>
 
       </div>
     );
