@@ -168,3 +168,85 @@ DARK MODE
     background-color: rgb(62, 62, 112);
   }
 }
+
+/*
+Presets Dark mode if chosen theme on MacOS
+*/
+@media (prefers-color-scheme: dark) {
+  .bg-dark {
+    height: 100%;
+    background-color: rgb(18, 18, 32);
+  }
+  .link-dark {
+    color: white;
+  }
+  .theme-icon-dark {
+    border: solid 1px white;
+  }
+  .hover-dark :hover {
+    border-bottom: solid 2px rgb(93, 93, 168);
+    border-top: solid 2px rgb(93, 93, 168);
+  }
+  .header-dark {
+    background-color: rgb(18, 18, 32);
+    border-bottom: solid 1px rgb(93, 93, 168);
+    color: white;
+  }
+  .active-dark {
+    color: rgb(18, 18, 32);
+    background-color: rgb(93, 93, 168);
+    border: solid 2px rgb(93, 93, 168);
+  }
+  .headerLink-dark {
+    color: white;
+  }
+  .home-dark {
+    color: white;
+    background-color: rgb(18, 18, 32);
+  }
+  .avatar-dark {
+    border: dashed 1px rgb(93, 93, 168);
+  }
+  .footer-dark {
+    background-color: rgb(18, 18, 32);
+    border-top: solid 1px rgb(93, 93, 168);
+  }
+  .highlight-dark {
+    color: rgb(143, 143, 250);
+  }
+  .banner-dark {
+    background-color: rgb(62, 62, 112);
+  }
+  .value-banner-dark {
+    background-color: rgb(62, 62, 112);
+  }
+  .scroll-banner-dark {
+    background-color: rgb(62, 62, 112);
+  }
+  .contact-dark :hover {
+    background-color: rgb(62, 62, 112);
+  }
+  .contact-button-dark {
+    color: white;
+  }
+  .project-button-dark {
+    color: white;
+    background-color: rgb(62, 62, 112);
+  }
+  .carousel-container-dark {
+    background-color: rgb(18, 18, 32);
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact-dark {
+      background-color: rgb(62, 62, 112);
+    }
+    .contact-button-dark {
+      color: white;
+    }
+    .project-button-dark {
+      color: white;
+      background-color: rgb(62, 62, 112);
+    }
+  }
+}
