@@ -23,7 +23,7 @@ class Projects extends Component {
       <Values theme={theme} />
     </div>
 
-    <ProjectList theme={theme} projects={projects} />
+    {/* <ProjectList theme={theme} projects={projects} /> */}
 
   </div>
   }
