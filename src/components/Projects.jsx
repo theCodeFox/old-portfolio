@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Values from './Values';
-import ProjectList from './ProjectList';
+// import ProjectList from './ProjectList';
 import Carousel from './Carousel';
 
 class Projects extends Component {
