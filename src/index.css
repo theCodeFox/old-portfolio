@@ -242,7 +242,7 @@ ul {
   width: 100%;
   padding: 0;
   margin: 0;
-  grid-template: auto auto auto auto / auto 30em 0.5em;
+  grid-template: auto auto auto auto / auto 24em 0.5em;
   grid-template-areas:
   "banner banner banner"
   "myInfo image-container space"
@@ -264,41 +264,35 @@ ul {
 .aboutMe-image-container {
   grid-area: image-container;
   display: grid;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   padding: 0;
   margin: 0;
-  grid-template: auto auto / 10em 10em 10em;
+  grid-template: auto 12em auto / 12em 12em;
   grid-template-areas:
-  "image1 image3 image3"
-  "image4 image4 image2"
+  "image3 image3"
+  "image1 image2"
+  "image4 image4"
 }
 .aboutMe-image1 {
   grid-area: image1;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0.2em;
+  margin: auto;
 }
 .aboutMe-image2 {
   grid-area: image2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0.2em;
+  margin: auto;
 }
 .aboutMe-image3 {
   grid-area: image3;
   position: absolute;
   bottom: 0;
-  margin: 0.2em;
+  margin: auto;
 }
 .aboutMe-image4 {
   grid-area: image4;
   position: absolute;
   top: 0;
-  right: 0;
-  margin: 0.2em;
+  margin: auto;
 }
 .carousel {
   position: relative;

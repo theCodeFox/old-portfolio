@@ -9,6 +9,14 @@ import PocketGP from './components/PocketGP';
 import HiveNews from './components/HiveNews';
 import Portfolio from './components/Portfolio';
 
+// image imports
+import lightThemeIcon from './images/light.png';
+import lightGithubIcon from './images/github-logo-light.png';
+import lightLinkedInIcon from './images/linkedin-logo-light.png';
+import darkThemeIcon from './images/dark.png';
+import darkGithubIcon from './images/github-logo-dark.png';
+import darkLinkedInIcon from './images/linkedin-logo-dark.png';
+
 class App extends Component {
   state = {
     activePage: ls.get('activePage') || 'CodeFox',
@@ -54,14 +62,14 @@ class App extends Component {
         <footer className={`footer footer-${theme}`}>
 
           <button className="theme-button" onClick={() => this.toggleTheme(theme)}>
-            <img className={`theme-icon theme-icon-${theme}`} src={require(`./images/${theme}.png`)} alt={`${theme} mode icon`} height="29px" width="29px" />
+            <img className={`theme-icon theme-icon-${theme}`} src={theme === "light" ? lightThemeIcon : darkThemeIcon} alt={`${theme} mode icon`} height="29px" width="29px" />
           </button>
 
           <a href="https://github.com/theCodeFox" target="_blank" rel="noopener noreferrer">
-            <img className="footerImages" src={require(`./images/github-logo-${theme}.png`)} alt="GitHub" height="30px" width="30px" />
+            <img className="footerImages" src={theme === "light" ? lightGithubIcon : darkGithubIcon} alt="GitHub" height="30px" width="30px" />
           </a>
           <a href="https://www.linkedin.com/in/kay-vose-codefox/" target="_blank" rel="noopener noreferrer">
-            <img className="footerImages" src={require(`./images/linkedin-logo-${theme}.png`)} alt="LinkedIn" height="30px" width="30px" />
+          <img className="footerImages" src={theme === "light" ? lightLinkedInIcon : darkLinkedInIcon} alt="LinkedIn" height="30px" width="30px" />
           </a>
 
         </footer>

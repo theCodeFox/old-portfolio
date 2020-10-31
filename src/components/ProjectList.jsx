@@ -10,7 +10,7 @@ const ProjectList = ({ theme, projects }) => {
       {projects.map((project, i) => {
         return <img
         className="project-button-image"
-        src={require(`../images/${project.name}.png`)}
+        src={project.image}
         alt={project.alt}
         key={`project-${i}`}
         onClick={() => {

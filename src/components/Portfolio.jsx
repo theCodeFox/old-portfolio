@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectScrollBanner from './ProjectScrollBanner';
 
+// image imports
+import portfolioImage from '../images/portfolioImage1.png';
+
 const Portfolio = ({ theme }) => {
   return <div className={`home-${theme}`}>
     <ProjectScrollBanner
@@ -17,11 +20,7 @@ const Portfolio = ({ theme }) => {
         <p>This is a solo project in <span className={`highlight highlight-${theme}`}>JavaScript, HTML and CSS.</span> It has been created in <span className={`highlight highlight-${theme}`}>React</span> with <span className={`highlight highlight-${theme}`}>Reach Router.</span> The ASCII fox (aka, CodeFox) was created in Visual Studio Code using the entension Rainbow Brackets and then edited using basic image editing software.</p>
         <p>When creating this portfolio I was determined to make it using <span className={`highlight highlight-${theme}`}>responsive design</span> as most people (myself included) use their mobile devices for their primary internet usage. I was aiming at a design that retains my playful edge while being easy for a user to navigate.</p>
       </div>
-      <img
-        src={require("../images/portfolioImage1.png")}
-        alt="home page in browser"
-        className="project-images project-image2"
-      />
+      <img src={portfolioImage} alt="home page in browser" className="project-images project-image2" />
     </div>
     <ProjectScrollBanner
       prev={{label: "Hive News", route: "hivenews"}}

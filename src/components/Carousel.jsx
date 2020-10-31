@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { navigate } from '@reach/router';
 
+// image imports
+import lightPrevIcon from '../images/prev-light.png';
+import lightNextIcon from '../images/next-light.png';
+import lightCloudIcon from '../images/cloud-light.png';
+import darkPrevIcon from '../images/prev-dark.png';
+import darkNextIcon from '../images/next-dark.png';
+import darkCloudIcon from '../images/cloud-dark.png';
+
 class Carousel extends Component {
   state = {
     counter: 0
@@ -17,18 +25,14 @@ class Carousel extends Component {
           clearTimeout(autoSlide)
           this.prevSlide()
         }}>
-          <img
-            className="slide-button-image"
-            src={require(`../images/prev-${theme}.png`)}
-            alt="previous slide"
-          />
+          <img className="slide-button-image" src={theme === "light" ? lightPrevIcon : darkPrevIcon} alt="previous slide" />
         </p>
         <div className="slide" onClick={() => {
           navigate(`/projects/${projects[counter].name.toLowerCase()}`, { state: { msg: 'project requested' } })
         }}>
           <img
             className="slide-image"
-            src={require(`../images/${projects[counter].name}.png`)}
+            src={projects[counter].image}
             alt={projects[counter].alt}
           />
           <p className="slide-content">
@@ -40,17 +44,13 @@ class Carousel extends Component {
           clearTimeout(autoSlide)
           this.nextSlide()
         }}>
-        <img
-          className="slide-button-image"
-          src={require(`../images/next-${theme}.png`)}
-          alt="next slide"
-        />
+          <img className="slide-button-image" src={theme === "light" ? lightNextIcon : darkNextIcon} alt="next slide" />
       </p>
     </div>
     <p className="indicators">
     {projects.map((project, i) => {
       return <img
-        src={require(`../images/cloud-${theme}.png`)}
+        src={theme === "light" ? lightCloudIcon : darkCloudIcon}
         alt=""
         key={`slide-${i}`}
         className={counter === i ? "active-slide" : "inactive-slide"}

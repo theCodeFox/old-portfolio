@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import Values from './Values';
-import ProjectList from './ProjectList';
+// import ProjectList from './ProjectList';
 import Carousel from './Carousel';
+
+// image imports
+import pocketGPImage from '../images/pocketGP.png';
+import hiveNewsImage from '../images/hiveNews.png';
+import portfolioImage from '../images/portfolio.png';
 
 class Projects extends Component {
   state = {
     projects: [
-      {name: 'pocketGP', alt: 'Pocket GP mobile App', title: 'Pocket GP: ', description: 'Cross platform mobile app supporting GPs and patients use their appointment times as efficiently as possible. Users can keep track of their ailments (including pictures and notes), with notifications and direct messaging between GP and patient.'},
-      {name: 'hiveNews', alt: 'hive news screen shot',title: 'Hive News: ', description: 'Allows user to create their own articles or read other users articles and comments. They can comment and vote on what they like or dislike and make changes to their articles or comments, including deleting what is no longer needed.'},
-      {name: 'portfolio', alt: 'portfolio screen shot', title: 'Portfolio: ', description: 'User can find out a little about me, Kay Vose (aka CodeFox), including what projects I have completed and how to contact me.'}
+      {name: 'pocketGP', image: pocketGPImage, alt: 'Pocket GP mobile App', title: 'Pocket GP: ', description: 'Cross platform mobile app supporting GPs and patients use their appointment times as efficiently as possible. Users can keep track of their ailments (including pictures and notes), with notifications and direct messaging between GP and patient.'},
+      {name: 'hiveNews', image: hiveNewsImage, alt: 'hive news screen shot',title: 'Hive News: ', description: 'Allows user to create their own articles or read other users articles and comments. They can comment and vote on what they like or dislike and make changes to their articles or comments, including deleting what is no longer needed.'},
+      {name: 'portfolio', image: portfolioImage, alt: 'portfolio screen shot', title: 'Portfolio: ', description: 'User can find out a little about me, Kay Vose (aka CodeFox), including what projects I have completed and how to contact me.'}
       ],
   }
 
@@ -23,7 +28,7 @@ class Projects extends Component {
       <Values theme={theme} />
     </div>
 
-    <ProjectList theme={theme} projects={projects} />
+    {/* <ProjectList theme={theme} projects={projects} /> */}
 
   </div>
   }
