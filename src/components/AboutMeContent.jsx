@@ -8,16 +8,41 @@ const AboutMeContent = ({ theme }) => {
       </h3>
       <p>
         I live & work in <span className={`highlight highlight-${theme}`}> Manchester city centre.</span>
-        <br />During these unusual times, I spend most of my time working remotely from my home office and my daily escape walks around the Northern Quarter. I am very work focused but make sure I mentor at Code and Stuff every Thursday between 17:30 and 20:30. We are currently on Discord and you can book your free place on Eventbrite as either a mentee or mentor. For more info:
+        <br />During these unusual times, I spend most of my time working remotely from my home office and my daily escape walks around the Northern Quarter. I am very work focused but make sure I mentor at Code and Stuff every Thursday between 17:30 and 20:30. We are currently on Discord and you can book your free place on Eventbrite as either a mentee or mentor.
         <br />
-        https://codeandstuff-manchester.github.io/
+          <a href="https://codeandstuff-manchester.github.io/" target="_blank" rel="noopener noreferrer" className={`highlight-${theme}`}> 
+          For more info, please visit us at codeandstuff-manchester.github.io!
+          </a>
       </p>
       <h3 className={`highlight highlight-${theme}`}>
         <img src={require(`../images/bee-${theme}.png`)} alt="bee" height="16" width="16" />{' '}
-        Languages
+        Core Technical Skills
       </h3>
       <p>
-        <strong>HTML<br />CSS<br />JavaScript<br />PHP<br />SQL (T-SQL, GraphQL, MySQL)<br />DAX & Power M Query<br />TypeScript</strong>
+        <strong>
+                Agile
+          <br />Scrum
+          <br />TDD
+          <br />Continuous Integration
+          <br />Azure
+          <br />SQL Server Mgmt Studio
+          <br />Power BI
+          <br />Data Warehouse Construction
+          <br />SSRS
+          <br />SSIS
+          <br />
+          <br />Python
+          <br />SQL (various)
+          <br />DAX
+          <br />Power M Query
+          <br />JavaScript
+          <br />HTML
+          <br />CSS
+          <br />
+          <br />Problem Solving
+          <br />Mentoring
+          <br />Public Speaking
+        </strong>
       </p>
       <h3 className={`highlight highlight-${theme}`}>
         <img src={require(`../images/cog-${theme}.png`)} alt="cog" height="16" width="16" />{' '}
