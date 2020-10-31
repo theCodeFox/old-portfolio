@@ -1,6 +1,11 @@
 import React from 'react';
 import ProjectScrollBanner from './ProjectScrollBanner';
 
+// image imports
+import tabletImage from '../images/hiveNewsTablet.png';
+import mobileImage from '../images/hiveNewsMobile.png';
+import browserImage from '../images/hiveNewsBrowser.png';
+
 const HiveNews = ({ theme }) => {
   return <div className={`home-${theme}`}>
     <ProjectScrollBanner
@@ -28,21 +33,11 @@ const HiveNews = ({ theme }) => {
         <p>Git was used for version control and code is stored in a public repo on my <span className={`highlight highlight-${theme}`}>GitHub</span></p>
       </div>
       
-      <img
-        src={require("../images/hiveNewsTablet.png")}
-        alt="user page on iPad"
-        className="project-images project-image1"
-      />
-      <img
-        src={require("../images/hiveNewsMobile.png")}
-        alt="article page on mobile"
-        className="project-images project-image2"
-      />
-      <img
-        src={require("../images/hiveNewsBrowser.png")}
-        alt="topics page on browser"
-        className="project-images project-image3"
-      />
+      <img src={tabletImage} alt="user page on iPad" className="project-images project-image1" />
+
+      <img src={mobileImage} alt="article page on mobile" className="project-images project-image2" />
+
+      <img src={browserImage} alt="topics page on browser" className="project-images project-image3" />
 
     </div>
     <ProjectScrollBanner

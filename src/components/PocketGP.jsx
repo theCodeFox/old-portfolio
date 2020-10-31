@@ -1,6 +1,15 @@
 import React from 'react';
 import ProjectScrollBanner from './ProjectScrollBanner';
 
+// image imports
+import logoImage from '../images/pocketGP-logo.png';
+import notificationsImage from '../images/pocketGP-notifications.jpg';
+import standupImage from '../images/pocketGP-standups.jpg';
+import wireframesImage from '../images/pocketGP-wireframes.jpg';
+import pocketGPImage from '../images/pocketGP.png';
+import graduationImage from '../images/graduation.jpg';
+
+
 const PocketGP = ({ theme }) => {
   return <div className={`home-${theme}`}>
   <ProjectScrollBanner
@@ -50,32 +59,32 @@ const PocketGP = ({ theme }) => {
       </ul>
     </div>
     <img
-      src={require("../images/pocketGP-logo.png")}
+      src={logoImage}
       alt="pocket GP logo"
       className="project-images project-image1"
     />
     <img
-      src={require("../images/pocketGP-notifications.jpg")}
+      src={notificationsImage}
       alt="pocket GP notifications"
       className="project-images project-image2"
     />
     <img
-      src={require("../images/pocketGP-standups.jpg")}
+      src={standupImage}
       alt="morning stand up"
       className="project-images project-image3"
     />
     <img
-      src={require("../images/pocketGP-wireframes.jpg")}
+      src={wireframesImage}
       alt="pocketGP wireframes"
       className="project-images project-image4"
     />
     <img
-      src={require("../images/pocketGP.png")}
+      src={pocketGPImage}
       alt="patient home page"
       className="project-images project-image5"
     />
     <img
-      src={require("../images/graduation.jpg")}
+      src={graduationImage}
       alt="northcoder graduation"
       className="project-images project-image6"
     />
