@@ -337,13 +337,13 @@ ul {
 .active-slide {
   transition: all 0.5s ease;
   padding: 0;
-  margin: 0 0.2em;
+  margin: 0.5em;
   height: 1.5em;
   width: 1.5em;
 }
 .inactive-slide {
   padding: 0.25em 0;
-  margin: auto 0.2em;
+  margin: 0.5em;
   opacity: 0.5;
   height: 1em;
   width: 1em;
@@ -612,13 +612,13 @@ ul {
   .active-slide {
     transition: all 0.5s ease;
     padding: 0;
-    margin: 0 0.2em;
+    margin: 0.5em;
     height: 1em;
     width: 1em;
   }
   .inactive-slide {
     padding: 0.25em 0;
-    margin: auto 0.2em;
+    margin: 0.5em;
     height: 0.5em;
     width: 0.5em;
   }

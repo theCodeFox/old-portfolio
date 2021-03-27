@@ -13,7 +13,7 @@ import darkCloudIcon from '../images/cloud-dark.png';
 const AboutMeContent = ({ theme }) => {
   return <div className="aboutMeContent">
       <h3 className={`highlight highlight-${theme}`}>
-      <img src={theme === "light" ? lightNextIcon : darkNextIcon} alt="pointing hand" height="16" width="16" />{' '}
+      {/* <img src={theme === "light" ? lightNextIcon : darkNextIcon} alt="pointing hand" height="16" width="16" />{' '} */}
         Where you can find me
       </h3>
       <p>
@@ -25,7 +25,7 @@ const AboutMeContent = ({ theme }) => {
           </a>
       </p>
       <h3 className={`highlight highlight-${theme}`}>
-        <img src={theme === "light" ? lightBeeIcon : darkBeeIcon} alt="bee" height="16" width="16" />{' '}
+        {/* <img src={theme === "light" ? lightBeeIcon : darkBeeIcon} alt="bee" height="16" width="16" />{' '} */}
         Core Technical Skills
       </h3>
       <p>
@@ -55,12 +55,12 @@ const AboutMeContent = ({ theme }) => {
         </strong>
       </p>
       <h3 className={`highlight highlight-${theme}`}>
-        <img src={theme === "light" ? lightCogIcon : darkCogIcon} alt="cog" height="16" width="16" />{' '}
+        {/* <img src={theme === "light" ? lightCogIcon : darkCogIcon} alt="cog" height="16" width="16" />{' '} */}
         What I am doing now
       </h3>
       <p>Graduated as a Junior Full Stack Developer (April 12th 2019) from <span className={`highlight highlight-${theme}`}>Northcoders MCR</span>. I am now working as a Junior BI at <span className={`highlight highlight-${theme}`}>Foreign Currency Direct</span></p>
       <h3 className={`highlight highlight-${theme}`}>
-        <img src={theme === "light" ? lightCloudIcon : darkCloudIcon} alt="cloud" height="16" width="16" />{' '}
+        {/* <img src={theme === "light" ? lightCloudIcon : darkCloudIcon} alt="cloud" height="16" width="16" />{' '} */}
         Favourite Quote
       </h3>
       <p>When once you have tasted flight, you will forever walk the earth with your eyes turned skyward, for there you have been, and there you will always long to return. <span className={`highlight highlight-${theme}`}>-Leonardo Da Vinci</span></p>
